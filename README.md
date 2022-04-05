@@ -1,4 +1,4 @@
-# wungus ctf writeups
+# [wungus](https://ctftime.org/team/180821) ctf writeups
 
 I see you've found this repository.
 
