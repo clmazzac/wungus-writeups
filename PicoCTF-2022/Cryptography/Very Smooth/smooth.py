@@ -18,6 +18,6 @@ for i in primes:
 
 print(big_m)
 
-g = math.gcd(a ** big_m - 1, n)
+g = math.gcd(pow(a, big_m - 1, n), n)
 
 print(g)
