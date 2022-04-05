@@ -11,3 +11,5 @@
 
 ## Final Thoughts
 - This was my introduction to CTFing, and it was pretty good! I had a pretty good time messing with the problems and yelling at my teammates to do things :P
+
+- My only gripe is that many problems could be cheesed, specifically Wizardlike
