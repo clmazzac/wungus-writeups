@@ -92,3 +92,7 @@ if __name__ == "__main__":
 it can take a few seconds, but 
 this is the output
 ```picoCTF{b1g_numb3rs_4ebc92cc}```
+
+
+
+(sorry if you came here to learn how the math works)
