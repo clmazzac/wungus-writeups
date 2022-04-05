@@ -6,9 +6,3 @@ That is great for you as you now you shall be blessed with the infinite wisdom o
 
 use this power well
 
-
-
-
-
-pmxi sucks
-
