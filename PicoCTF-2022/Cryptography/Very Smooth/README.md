@@ -19,8 +19,8 @@
 ### Description
 
 > Forget safe primes... Here, we like to live life dangerously... >:)
-> - gen.py
-> - output.txt
+> - [gen.py](./gen.py)
+> - [output.txt](./output.txt)
 ---
 
 ## Solution
