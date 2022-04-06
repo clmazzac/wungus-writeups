@@ -41,4 +41,4 @@ By googling `Pollard RSA`, you get two attacks: The [Pollard p-1 factorization a
 
 So, the attack
 
-![](https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png)
+<p align="center">![](https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png)</p>
