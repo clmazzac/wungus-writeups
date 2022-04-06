@@ -31,3 +31,7 @@ $ sample console
 ## Solution
 
 Solution text
+
+
+![](https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png)
+
