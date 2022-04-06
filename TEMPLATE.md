@@ -33,5 +33,4 @@ $ sample console
 Solution text
 
 
-![](https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png)
-
+<p align="center"><img src="https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png"></p>
