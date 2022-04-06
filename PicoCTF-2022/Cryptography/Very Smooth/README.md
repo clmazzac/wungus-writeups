@@ -39,6 +39,41 @@ c = 1474551810299054999339623196701023859892548759573707510238671445383320599912
 ```
 By googling `Pollard RSA`, you get two attacks: The [Pollard p-1 factorization algorithm](https://en.wikipedia.org/wiki/Pollard%27s_p_%E2%88%92_1_algorithm) and [Pollard's Rho algorithm](https://en.wikipedia.org/wiki/Pollard%27s_rho_algorithm). Referencing the title of the problem, "Very Smooth", you quickly realize that the method you are meant to use is the p-1 algorithm, as it is explicitly stated to be made for factoring numbers where p-1 is powersmooth.
 
-So, the attack
+So, the attack is as follows:
+
+1. select a smoothness bound B
+2. define M = the product of all numbers q^log_q(b), where q is primes less than B
+3. randomly pick a coprime to n (note: we can actually fix a, e.g. if n is odd, then we can always select a = 2, random selection here is not imperative)
+4. compute g = gcd(a^(M − 1), n) (note: exponentiation can be done modulo n)
+5. if 1 < g < n then return g
+6. if g = 1 then select a larger B and go to step 2 or return failure
+7. if g = n then select a smaller B and go to step 2 or return failure
+```py
+for i in primes:
+    j = i ** math.floor(math.log(big_b, i))
+    big_m *= j
+
+p = math.gcd(pow(a, big_m - 1, n), n)
+```
+
+This returns a:
+
+```p = 90948561168129273993221811210960666354464742371830355918414414795363383976255151106886894591386782182287999383540600363376830936851508670766644159365209354955699549804449139999147729583415495583682823772357163202067648618287663470084801559563298980120877685812575934222306026078618063649035501461830981153927```
+
+From there, you can do your basic RSA decryption.
+
+```py
+q = n // p
+carmichael = math.lcm(int(p - 1), int(q - 1))
+
+e = 65537
+d = pow(e, -1, carmichael)
+print(f"d: {d}")
+
+flag = pow(int(c), d, int(n))
+print(f"flag: {flag}")
+print(f"flag hex: {hex(int(flag))}")
+```
+Decoding the flag hex returns `picoCTF{7c8625a1}`.
 
 <p align="center"><img src="https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png"></p>
