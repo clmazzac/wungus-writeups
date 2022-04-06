@@ -18,6 +18,15 @@ for i in primes:
 
 print(big_m)
 
-g = math.gcd(pow(a, big_m - 1, n), n)
+p = math.gcd(pow(a, big_m - 1, n), n)
 
-print(g)
+q = n // p
+carmichael = math.lcm(int(p - 1), int(q - 1))
+
+e = 65537
+d = pow(e, -1, carmichael)
+print(f"d: {d}")
+
+flag = pow(int(c), d, int(n))
+print(f"flag: {flag}")
+print(f"flag hex: {hex(int(flag))}")
