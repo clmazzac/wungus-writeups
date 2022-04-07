@@ -76,6 +76,6 @@ flag = pow(int(c), d, int(n))
 print(f"flag: {flag}")
 print(f"flag hex: {hex(int(flag))}")
 ```
-Decoding the flag hex returns `picoCTF{7c8625a1}`.
+Decoding the flag hex returns the flag.
 
 <p align="center"><img src="https://static.wikia.nocookie.net/riskofrain2_gamepedia_en/images/e/e1/Weeping_Fungus.png"></p>
